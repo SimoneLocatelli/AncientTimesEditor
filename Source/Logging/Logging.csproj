@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <FinalizeCode>True</FinalizeCode>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="$(SolutionDir)Configuration\common.props" />
+  <PropertyGroup>
+    <ProjectGuid>{95798199-15E4-4A64-AB7F-7D3334A56027}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CommonExtensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=322f904ec9d5f203, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\CommonExtensions.1.0.1\lib\CommonExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentChecker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=322f904ec9d5f203, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\FluentChecker.1.0.1\lib\FluentChecker.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="YamlDotNet">
+      <HintPath>..\..\packages\YamlDotNet.3.5.1\lib\net35\YamlDotNet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LogFormatter.cs" />
+    <Compile Include="MemoryLogger.cs" />
+    <Compile Include="EditorObjectDumper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Logging.Dependencies\Logging.Dependencies.csproj">
+      <Project>{044951CE-C496-4D53-824B-5CE5DAD5392D}</Project>
+      <Name>Logging.Dependencies</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)Configuration\commonIncludedItems.props" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+</Project>

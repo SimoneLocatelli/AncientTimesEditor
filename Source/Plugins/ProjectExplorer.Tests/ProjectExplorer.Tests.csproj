@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(SolutionDir)Configuration/plugintestcommon.props" />
+  <PropertyGroup>
+    <ProjectGuid>{38DF59BD-C5F0-4576-BF5C-192755FF2999}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DockSystem.Dependencies, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="FileSystem.Dependencies, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="FileSystem.Dependencies.1.0.0.0.Fakes">
+      <HintPath>FakesAssemblies\FileSystem.Dependencies.1.0.0.0.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="ProjectExplorer.Dependencies.Fakes">
+      <HintPath>FakesAssemblies\ProjectExplorer.Dependencies.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WpfCommonLibrary.Dependencies, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="WpfCommonLibrary.Dependencies.1.0.0.0.Fakes">
+      <HintPath>FakesAssemblies\WpfCommonLibrary.Dependencies.1.0.0.0.Fakes.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Choose>
+    <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+  <ItemGroup>
+    <Compile Include="DirectoryContextMenuTest.cs" />
+    <Compile Include="GenericFileContextMenuTest.cs" />
+    <Compile Include="MenuItemTest.cs" />
+    <Compile Include="MockData\MockICommand.cs" />
+    <Compile Include="MockData\SpyIProjectLoader.cs" />
+    <Compile Include="NewFolderMenuItemTest.cs" />
+    <Compile Include="ProjectContextMenuTest.cs" />
+    <Compile Include="ProjectExplorerDockTabTest.cs" />
+    <Compile Include="ProjectExplorerItemFactoryTest.cs" />
+    <Compile Include="ProjectExplorerItemTest.cs" />
+    <Compile Include="ProjectExplorerViewModelTest.cs" />
+    <Compile Include="ProjectExplorerViewTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProjectExplorer.Dependencies\ProjectExplorer.Dependencies.csproj">
+      <Project>{48364057-10C5-4C26-924F-E9BB20D6B566}</Project>
+      <Name>ProjectExplorer.Dependencies</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProjectExplorer\ProjectExplorer.csproj">
+      <Project>{C3C8E525-0D24-4E88-842E-157A0F37C6AC}</Project>
+      <Name>ProjectExplorer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Fakes Include="Fakes\ProjectExplorer.Dependencies.fakes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Fakes Include="Fakes\FileSystem.Dependencies.fakes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Fakes Include="Fakes\WpfCommonLibrary.Dependencies.fakes" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

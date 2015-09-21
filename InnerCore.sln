@@ -1,0 +1,90 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B739DF1E-3560-45FE-899B-1C59375360C2}"
+	ProjectSection(SolutionItems) = preProject
+		Configuration\CodeAnalysisRuleSet.ruleset = Configuration\CodeAnalysisRuleSet.ruleset
+		Configuration\CodeCoverage.runsettings = Configuration\CodeCoverage.runsettings
+		Configuration\common.props = Configuration\common.props
+		Configuration\commonIncludedItems.props = Configuration\commonIncludedItems.props
+		Configuration\GlobalAssemblyProperties.cs = Configuration\GlobalAssemblyProperties.cs
+		Configuration\testcommon.props = Configuration\testcommon.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{EBD938DE-CD7D-41AF-98BF-546D78984D46}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.Common", "Source\Tests.Common\Tests.Common.csproj", "{C29EAF71-1E7E-4FE4-B23C-063C92F44601}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logging.Dependencies", "Source\Logging.Dependencies\Logging.Dependencies.csproj", "{044951CE-C496-4D53-824B-5CE5DAD5392D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logging", "Source\Logging\Logging.csproj", "{95798199-15E4-4A64-AB7F-7D3334A56027}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{45B3D7AE-E96D-4AED-93B3-3EEEBD012D83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logging.Tests", "Source\Logging.Tests\Logging.Tests.csproj", "{1BB49AE1-C5F8-44E5-81E9-0D52662C7CB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.Dependencies", "Source\Application.Dependencies\Application.Dependencies.csproj", "{3E0CDC26-B58A-4425-A20A-F862A11CA1D3}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Source\\Tests.Common\\Tests.Common.csproj
+		SccProjectName1 = Source/Tests.Common
+		SccLocalPath1 = Source\\Tests.Common
+		SccProjectUniqueName2 = Source\\Logging.Dependencies\\Logging.Dependencies.csproj
+		SccProjectName2 = Source/Logging.Dependencies
+		SccLocalPath2 = Source\\Logging.Dependencies
+		SccProjectUniqueName3 = Source\\Logging\\Logging.csproj
+		SccProjectName3 = Source/Logging
+		SccLocalPath3 = Source\\Logging
+		SccProjectUniqueName4 = Source\\Logging.Tests\\Logging.Tests.csproj
+		SccProjectTopLevelParentUniqueName4 = InnerCore.sln
+		SccProjectName4 = Source/Logging.Tests
+		SccLocalPath4 = Source\\Logging.Tests
+		SccProjectUniqueName5 = Source\\Application.Dependencies\\Application.Dependencies.csproj
+		SccProjectName5 = Source/Application.Dependencies
+		SccLocalPath5 = Source\\Application.Dependencies
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C29EAF71-1E7E-4FE4-B23C-063C92F44601}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C29EAF71-1E7E-4FE4-B23C-063C92F44601}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C29EAF71-1E7E-4FE4-B23C-063C92F44601}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C29EAF71-1E7E-4FE4-B23C-063C92F44601}.Release|Any CPU.Build.0 = Release|Any CPU
+		{044951CE-C496-4D53-824B-5CE5DAD5392D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{044951CE-C496-4D53-824B-5CE5DAD5392D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{044951CE-C496-4D53-824B-5CE5DAD5392D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{044951CE-C496-4D53-824B-5CE5DAD5392D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95798199-15E4-4A64-AB7F-7D3334A56027}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95798199-15E4-4A64-AB7F-7D3334A56027}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95798199-15E4-4A64-AB7F-7D3334A56027}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95798199-15E4-4A64-AB7F-7D3334A56027}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BB49AE1-C5F8-44E5-81E9-0D52662C7CB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BB49AE1-C5F8-44E5-81E9-0D52662C7CB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BB49AE1-C5F8-44E5-81E9-0D52662C7CB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BB49AE1-C5F8-44E5-81E9-0D52662C7CB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E0CDC26-B58A-4425-A20A-F862A11CA1D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E0CDC26-B58A-4425-A20A-F862A11CA1D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E0CDC26-B58A-4425-A20A-F862A11CA1D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E0CDC26-B58A-4425-A20A-F862A11CA1D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1BB49AE1-C5F8-44E5-81E9-0D52662C7CB1} = {45B3D7AE-E96D-4AED-93B3-3EEEBD012D83}
+	EndGlobalSection
+EndGlobal

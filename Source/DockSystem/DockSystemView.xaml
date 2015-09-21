@@ -1,0 +1,63 @@
+﻿<UserControl x:Class="Editor.DockSystem.DockSystemView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:avalon="http://schemas.xceed.com/wpf/xaml/avalondock"
+             xmlns:converters="clr-namespace:WpfCommonLibrary.Converters;assembly=WpfCommonLibrary"
+             xmlns:templates="clr-namespace:WpfCommonLibrary.Templates;assembly=WpfCommonLibrary"
+             xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+             xmlns:system="clr-namespace:System;assembly=mscorlib"
+             xmlns:dockSystem="clr-namespace:Editor.DockSystem"
+             mc:Ignorable="d"
+             Background="Transparent"
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.Resources>
+        <converters:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
+        <dockSystem:ActiveDocumentConverter x:Key="ActiveDocumentConverter" />
+    </UserControl.Resources>
+    <avalon:DockingManager
+            Name="dockingManager"
+            AnchorablesSource="{Binding Tools, UpdateSourceTrigger=PropertyChanged}"
+            DocumentsSource="{Binding Documents, UpdateSourceTrigger=PropertyChanged}"
+            ActiveContent="{Binding ActiveDocument, Mode=TwoWay, Converter={StaticResource ActiveDocumentConverter}}">
+
+        <avalon:DockingManager.LayoutItemTemplate>
+            <DataTemplate>
+                <ContentControl Content="{Binding Control}" Background="Transparent" />
+            </DataTemplate>
+        </avalon:DockingManager.LayoutItemTemplate>
+
+        <avalon:DockingManager.LayoutItemContainerStyleSelector>
+            <dockSystem:DockStyleSelector>
+                <dockSystem:DockStyleSelector.ToolStyle>
+                    <Style TargetType="{x:Type avalon:LayoutAnchorableItem}">
+                        <Setter Property="Title" Value="{Binding Model.Title}" />
+                        <Setter Property="IconSource" Value="{Binding Model.Icon}" />
+                        <Setter Property="Visibility" Value="{Binding Model.IsVisible, Mode=TwoWay, Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter={x:Static Visibility.Hidden}}" />
+                        <Setter Property="ContentId" Value="{Binding Model.ContentId}" />
+                        <Setter Property="IsSelected" Value="{Binding Model.IsSelected, Mode=TwoWay}" />
+                        <Setter Property="IsActive" Value="{Binding Model.IsActive, Mode=TwoWay}" />
+                    </Style>
+                </dockSystem:DockStyleSelector.ToolStyle>
+                <dockSystem:DockStyleSelector.DocumentStyle>
+                    <Style TargetType="{x:Type avalon:LayoutItem}">
+                        <Setter Property="Title" Value="{Binding Model.Title}" />
+                        <Setter Property="IconSource" Value="{Binding Model.Icon}" />
+                        <Setter Property="Visibility" Value="{Binding Model.IsVisible, Mode=TwoWay, Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter={x:Static Visibility.Hidden}}" />
+                        <Setter Property="ContentId" Value="{Binding Model.ContentId}" />
+                        <Setter Property="IsSelected" Value="{Binding Model.IsSelected, Mode=TwoWay}" />
+                        <Setter Property="IsActive" Value="{Binding Model.IsActive, Mode=TwoWay}" />
+                    </Style>
+                </dockSystem:DockStyleSelector.DocumentStyle>
+            </dockSystem:DockStyleSelector>
+        </avalon:DockingManager.LayoutItemContainerStyleSelector>
+
+        <avalon:LayoutRoot>
+            <avalon:LayoutPanel Orientation="Horizontal">
+                <avalon:LayoutDocumentPane />
+                <avalon:LayoutAnchorablePane Name="ToolsPane"  DockWidth="550" />
+            </avalon:LayoutPanel>
+        </avalon:LayoutRoot>
+    </avalon:DockingManager>
+</UserControl>

@@ -1,0 +1,134 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FE46AC53-43CB-486D-A648-15386EAB3C06}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\Configuration\CodeAnalysisDictionary.xml = ..\..\Configuration\CodeAnalysisDictionary.xml
+		..\..\Configuration\common.props = ..\..\Configuration\common.props
+		..\..\Configuration\commonIncludedItems.props = ..\..\Configuration\commonIncludedItems.props
+		..\..\Configuration\GlobalAssemblyProperties.cs = ..\..\Configuration\GlobalAssemblyProperties.cs
+		Configuration\plugin.props = Configuration\plugin.props
+		Configuration\plugintestcommon.props = Configuration\plugintestcommon.props
+		..\..\Configuration\testcommon.props = ..\..\Configuration\testcommon.props
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutputView", "OutputView\OutputView.csproj", "{6DB5CF85-D5A8-4EDC-B955-CAC852D03C22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutputView.Dependencies", "OutputView.Dependencies\OutputView.Dependencies.csproj", "{BDB11F35-656B-4E2D-8C2D-C2A27A46CC96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutputView.Tests", "OutputViewControl.Tests\OutputView.Tests.csproj", "{75B8DC88-ABF3-45D1-B83F-E18256A07131}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectExplorer", "ProjectExplorer\ProjectExplorer.csproj", "{C3C8E525-0D24-4E88-842E-157A0F37C6AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectExplorer.Dependencies", "ProjectExplorer.Dependencies\ProjectExplorer.Dependencies.csproj", "{48364057-10C5-4C26-924F-E9BB20D6B566}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScriptManager", "ScriptEditor\ScriptManager.csproj", "{3FF399E5-5571-4A31-9C39-C4C1FAFA7B22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonEditor", "PokemonEditor\PokemonEditor.csproj", "{E7A7125A-3EB2-41A7-9A03-E7010E617CCE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{60B5472F-DCCB-4A95-AFDE-A7C567C95925}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{7BD29233-5353-4C6F-8DF7-BB78A613BD66}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{57B01949-3408-4848-96F4-F122BC8F500E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Badasquall.Dependencies", "Badasquall.Dependencies\Badasquall.Dependencies.csproj", "{16CA3E23-A3AA-4276-858D-DD6B4606B65B}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 9
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = OutputView\\OutputView.csproj
+		SccProjectTopLevelParentUniqueName1 = Plugins.sln
+		SccProjectName1 = OutputView
+		SccLocalPath1 = OutputView
+		SccProjectUniqueName2 = OutputView.Dependencies\\OutputView.Dependencies.csproj
+		SccProjectTopLevelParentUniqueName2 = Plugins.sln
+		SccProjectName2 = OutputView.Dependencies
+		SccLocalPath2 = OutputView.Dependencies
+		SccProjectUniqueName3 = OutputViewControl.Tests\\OutputView.Tests.csproj
+		SccProjectTopLevelParentUniqueName3 = Plugins.sln
+		SccProjectName3 = OutputViewControl.Tests
+		SccLocalPath3 = OutputViewControl.Tests
+		SccProjectUniqueName4 = ProjectExplorer\\ProjectExplorer.csproj
+		SccProjectTopLevelParentUniqueName4 = Plugins.sln
+		SccProjectName4 = ProjectExplorer
+		SccLocalPath4 = ProjectExplorer
+		SccProjectUniqueName5 = ProjectExplorer.Dependencies\\ProjectExplorer.Dependencies.csproj
+		SccProjectTopLevelParentUniqueName5 = Plugins.sln
+		SccProjectName5 = ProjectExplorer.Dependencies
+		SccLocalPath5 = ProjectExplorer.Dependencies
+		SccProjectUniqueName6 = PokemonEditor\\PokemonEditor.csproj
+		SccProjectTopLevelParentUniqueName6 = Plugins.sln
+		SccProjectName6 = PokemonEditor
+		SccLocalPath6 = PokemonEditor
+		SccProjectUniqueName7 = ScriptEditor\\ScriptManager.csproj
+		SccProjectTopLevelParentUniqueName7 = Plugins.sln
+		SccProjectName7 = ScriptEditor
+		SccLocalPath7 = ScriptEditor
+		SccProjectUniqueName8 = Badasquall.Dependencies\\Badasquall.Dependencies.csproj
+		SccProjectTopLevelParentUniqueName8 = Plugins.sln
+		SccProjectName8 = Badasquall.Dependencies
+		SccLocalPath8 = Badasquall.Dependencies
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6DB5CF85-D5A8-4EDC-B955-CAC852D03C22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DB5CF85-D5A8-4EDC-B955-CAC852D03C22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DB5CF85-D5A8-4EDC-B955-CAC852D03C22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DB5CF85-D5A8-4EDC-B955-CAC852D03C22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDB11F35-656B-4E2D-8C2D-C2A27A46CC96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDB11F35-656B-4E2D-8C2D-C2A27A46CC96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDB11F35-656B-4E2D-8C2D-C2A27A46CC96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDB11F35-656B-4E2D-8C2D-C2A27A46CC96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75B8DC88-ABF3-45D1-B83F-E18256A07131}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75B8DC88-ABF3-45D1-B83F-E18256A07131}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75B8DC88-ABF3-45D1-B83F-E18256A07131}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75B8DC88-ABF3-45D1-B83F-E18256A07131}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3C8E525-0D24-4E88-842E-157A0F37C6AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3C8E525-0D24-4E88-842E-157A0F37C6AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3C8E525-0D24-4E88-842E-157A0F37C6AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3C8E525-0D24-4E88-842E-157A0F37C6AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48364057-10C5-4C26-924F-E9BB20D6B566}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48364057-10C5-4C26-924F-E9BB20D6B566}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48364057-10C5-4C26-924F-E9BB20D6B566}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48364057-10C5-4C26-924F-E9BB20D6B566}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FF399E5-5571-4A31-9C39-C4C1FAFA7B22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FF399E5-5571-4A31-9C39-C4C1FAFA7B22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FF399E5-5571-4A31-9C39-C4C1FAFA7B22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FF399E5-5571-4A31-9C39-C4C1FAFA7B22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7A7125A-3EB2-41A7-9A03-E7010E617CCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7A7125A-3EB2-41A7-9A03-E7010E617CCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7A7125A-3EB2-41A7-9A03-E7010E617CCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7A7125A-3EB2-41A7-9A03-E7010E617CCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16CA3E23-A3AA-4276-858D-DD6B4606B65B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16CA3E23-A3AA-4276-858D-DD6B4606B65B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16CA3E23-A3AA-4276-858D-DD6B4606B65B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16CA3E23-A3AA-4276-858D-DD6B4606B65B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6DB5CF85-D5A8-4EDC-B955-CAC852D03C22} = {7BD29233-5353-4C6F-8DF7-BB78A613BD66}
+		{BDB11F35-656B-4E2D-8C2D-C2A27A46CC96} = {7BD29233-5353-4C6F-8DF7-BB78A613BD66}
+		{C3C8E525-0D24-4E88-842E-157A0F37C6AC} = {7BD29233-5353-4C6F-8DF7-BB78A613BD66}
+		{48364057-10C5-4C26-924F-E9BB20D6B566} = {7BD29233-5353-4C6F-8DF7-BB78A613BD66}
+		{3FF399E5-5571-4A31-9C39-C4C1FAFA7B22} = {7BD29233-5353-4C6F-8DF7-BB78A613BD66}
+		{E7A7125A-3EB2-41A7-9A03-E7010E617CCE} = {7BD29233-5353-4C6F-8DF7-BB78A613BD66}
+		{16CA3E23-A3AA-4276-858D-DD6B4606B65B} = {7BD29233-5353-4C6F-8DF7-BB78A613BD66}
+		{75B8DC88-ABF3-45D1-B83F-E18256A07131} = {57B01949-3408-4848-96F4-F122BC8F500E}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,71 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FE46AC53-43CB-486D-A648-15386EAB3C06}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\Configuration\AncientTimesStrongNameKeyDevelopment.pfx = ..\..\Configuration\AncientTimesStrongNameKeyDevelopment.pfx
+		..\..\Configuration\CodeAnalysisDictionary.xml = ..\..\Configuration\CodeAnalysisDictionary.xml
+		..\..\Configuration\CodeAnalysisRuleSet.ruleset = ..\..\Configuration\CodeAnalysisRuleSet.ruleset
+		..\..\Configuration\CodeCoverage.runsettings = ..\..\Configuration\CodeCoverage.runsettings
+		..\..\Configuration\common.props = ..\..\Configuration\common.props
+		..\..\Configuration\commonIncludedItems.props = ..\..\Configuration\commonIncludedItems.props
+		..\..\Configuration\GlobalAssemblyProperties.cs = ..\..\Configuration\GlobalAssemblyProperties.cs
+		Configuration\plugin.props = Configuration\plugin.props
+		..\..\Configuration\testcommon.props = ..\..\Configuration\testcommon.props
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonEditor", "PokemonEditor\PokemonEditor.csproj", "{E7A7125A-3EB2-41A7-9A03-E7010E617CCE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Badasquall.Dependencies", "Badasquall.Dependencies\Badasquall.Dependencies.csproj", "{16CA3E23-A3AA-4276-858D-DD6B4606B65B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonEditor.Tests", "PokemonEditor.Tests\PokemonEditor.Tests.csproj", "{C29EAF71-1E7E-4FE4-B23C-063C92F44601}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonEditor.Dependencies", "PokemonEditor.Dependencies\PokemonEditor.Dependencies.csproj", "{50A6F68A-FF62-4BB4-B998-0333DB59F210}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = PokemonEditor\\PokemonEditor.csproj
+		SccProjectName1 = PokemonEditor
+		SccLocalPath1 = PokemonEditor
+		SccProjectUniqueName2 = Badasquall.Dependencies\\Badasquall.Dependencies.csproj
+		SccProjectName2 = Badasquall.Dependencies
+		SccLocalPath2 = Badasquall.Dependencies
+		SccProjectUniqueName3 = PokemonEditor.Tests\\PokemonEditor.Tests.csproj
+		SccProjectName3 = PokemonEditor.Tests
+		SccLocalPath3 = PokemonEditor.Tests
+		SccProjectUniqueName4 = PokemonEditor.Dependencies\\PokemonEditor.Dependencies.csproj
+		SccProjectName4 = PokemonEditor.Dependencies
+		SccLocalPath4 = PokemonEditor.Dependencies
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E7A7125A-3EB2-41A7-9A03-E7010E617CCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7A7125A-3EB2-41A7-9A03-E7010E617CCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7A7125A-3EB2-41A7-9A03-E7010E617CCE}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7A7125A-3EB2-41A7-9A03-E7010E617CCE}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{16CA3E23-A3AA-4276-858D-DD6B4606B65B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16CA3E23-A3AA-4276-858D-DD6B4606B65B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16CA3E23-A3AA-4276-858D-DD6B4606B65B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16CA3E23-A3AA-4276-858D-DD6B4606B65B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C29EAF71-1E7E-4FE4-B23C-063C92F44601}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C29EAF71-1E7E-4FE4-B23C-063C92F44601}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C29EAF71-1E7E-4FE4-B23C-063C92F44601}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{C29EAF71-1E7E-4FE4-B23C-063C92F44601}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{50A6F68A-FF62-4BB4-B998-0333DB59F210}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50A6F68A-FF62-4BB4-B998-0333DB59F210}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50A6F68A-FF62-4BB4-B998-0333DB59F210}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50A6F68A-FF62-4BB4-B998-0333DB59F210}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

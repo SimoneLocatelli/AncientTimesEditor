@@ -1,0 +1,1 @@
+"%programfiles(x86)%\Microsoft Team Foundation Server 2013 Power Tools\TFPT.EXE" scorch /exclude:packages.config *.user /recursive C:\Workspaces\AncientTimes\

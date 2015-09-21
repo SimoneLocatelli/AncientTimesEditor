@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <RootDir Condition="$(RootDir) == '' Or $(RootDir) == '*Undefined*'">$(SolutionDir)\</RootDir>
+    <FinalizeCode>False</FinalizeCode>
+  </PropertyGroup>
+
+  <Import Condition="$(CommonImported) != True" Project="$(RootDir)Configuration\common.props" />
+  <PropertyGroup>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputPath>$(RootDir)\Output\$(Configuration)\$(PlatformTarget)\Tests</OutputPath>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes" />
+    <Reference Include="UnitTestInjector">
+      <HintPath>$(NugetDir)UnitTestInjector.1.0.0\lib\UnitTestInjector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+    <Reference Include="Tests.Common">
+      <HintPath>$(OutputPath)Tests.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,8 @@
+﻿<mui:ModernWindow x:Class="Editor.WindowShell.EmptyWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+        Title="EmptyWindow" Style="{StaticResource BlankWindow}">
+
+    <ContentControl Name="Container" Background="Transparent" />
+</mui:ModernWindow>

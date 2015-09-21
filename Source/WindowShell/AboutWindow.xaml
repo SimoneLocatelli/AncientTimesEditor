@@ -1,0 +1,17 @@
+﻿<Window x:Class="Editor.WindowShell.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AboutWindow" Height="500" Width="600">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Image Width="200">
+            <Image.Source>
+                <BitmapImage UriSource="pack://application:,,,/Resources;component/Images/badasquallLogo.png" />
+            </Image.Source>
+        </Image>
+    </Grid>
+</Window>

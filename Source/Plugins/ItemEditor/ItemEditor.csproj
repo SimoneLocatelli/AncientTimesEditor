@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="$(SolutionDir)Configuration\plugin.props" />
+  <PropertyGroup>
+    <ProjectGuid>{DD8B6C50-4A8A-4C06-8480-FADC79D585EF}</ProjectGuid>
+    <OutputType>library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CommonControls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Output\Debug\CommonControls.dll</HintPath>
+    </Reference>
+    <Reference Include="FileSystem.Dependencies, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    </Reference>
+    <Reference Include="FluentChecker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=322f904ec9d5f203, processorArchitecture=MSIL" />
+    <Reference Include="CommonControls.Dependencies, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Logging.Dependencies, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    </Reference>
+    <Reference Include="ProjectExplorer.Dependencies, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowShell.Dependencies, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    </Reference>
+    <Reference Include="WpfCommonLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    </Reference>
+    <Reference Include="WpfCommonLibrary.Dependencies, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entities\Item.cs" />
+    <Compile Include="Entities\ItemCategory.cs" />
+    <Compile Include="ItemEditorClosingHandler.cs" />
+    <Compile Include="ItemEditorProjectExplorerItem.cs" />
+    <Compile Include="ItemEditorView.xaml.cs">
+      <DependentUpon>ItemEditorView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ItemEditorViewModel.cs" />
+    <Compile Include="ItemEditorWindowFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Serializers\BaseSerializer.cs" />
+    <Compile Include="Serializers\ItemDeserializer.cs" />
+    <Compile Include="Serializers\ItemSerializer.cs" />
+    <Compile Include="Serializers\SerializableItem.cs" />
+    <Compile Include="Serializers\SerializableItemCollection.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Badasquall.Dependencies\Badasquall.Dependencies.csproj">
+      <Project>{16CA3E23-A3AA-4276-858D-DD6B4606B65B}</Project>
+      <Name>Badasquall.Dependencies</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ItemEditor.Dependencies\ItemEditor.Dependencies.csproj">
+      <Project>{70E2E797-9C1B-40E8-91D6-CC4153A312D3}</Project>
+      <Name>ItemEditor.Dependencies</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="ItemEditorView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

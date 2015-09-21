@@ -1,0 +1,12 @@
+﻿<mui:ModernWindow x:Class="Editor.WindowShell.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+        xmlns:windowShell="clr-namespace:Editor.WindowShell"
+        xmlns:regions="http://www.codeplex.com/CompositeWPF"
+        WindowState="Maximized"
+        Title="MainWindow"
+        Style="{StaticResource BlankWindow}">
+
+    <ContentControl regions:RegionManager.RegionName="{x:Static windowShell:MainWindow.ContentsRegionNameConst }" />
+</mui:ModernWindow>

@@ -1,0 +1,23 @@
+﻿<Window x:Class="Editor.PluginsTester.PluginsTesterMainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <ListBox Grid.Column="0"
+                 ItemsSource="{Binding Plugins}"
+                 SelectedItem="{Binding SelectedPlugin}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Label Content="{Binding Name}" />
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <ContentControl Grid.Column="1" Content="{Binding SelectedPluginContent}" />
+    </Grid>
+</Window>

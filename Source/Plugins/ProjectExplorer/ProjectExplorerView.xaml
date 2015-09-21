@@ -1,0 +1,46 @@
+﻿<UserControl x:Class="Editor.ProjectExplorer.ProjectExplorerView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:behaviours="clr-namespace:WpfCommonLibrary.Behaviours;assembly=WpfCommonLibrary"
+             mc:Ignorable="d"
+             Background="#252526"
+             d:DesignHeight="300" d:DesignWidth="300">
+    <TreeView ItemsSource="{Binding Items}"
+           Background="Transparent">
+        <TreeView.ItemContainerStyle>
+            <Style TargetType="{x:Type TreeViewItem}">
+                <Setter Property="IsExpanded" Value="{Binding IsExpanded, Mode=TwoWay}" />
+                <Setter Property="IsSelected" Value="{Binding IsSelected, Mode=TwoWay}" />
+                <Setter Property="behaviours:MouseDoubleClick.Command" Value="{Binding OpenCommand}" />
+                <Setter Property="behaviours:MouseDoubleClick.CommandParameter" Value="{Binding}" />
+                <Setter Property="FontWeight" Value="Normal" />
+                <Style.Triggers>
+                    <Trigger Property="IsSelected" Value="True">
+                        <Setter Property="FontWeight" Value="Bold" />
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+        </TreeView.ItemContainerStyle>
+
+        <TreeView.ItemTemplate>
+            <HierarchicalDataTemplate ItemsSource="{Binding Children}">
+                <TextBlock Text="{Binding Name}" Foreground="#d1d1d1">
+                    <TextBlock.ContextMenu>
+                        <ContextMenu ItemsSource="{Binding ContextMenuItems}">
+                            <ContextMenu.ItemContainerStyle>
+                                <Style TargetType="MenuItem">
+                                    <Setter Property="Header" Value="{Binding Path=Name}" />
+                                    <Setter Property="ItemsSource" Value="{Binding Path=InnerMenuItems}" />
+                                    <Setter Property="Command" Value="{Binding Command}" />
+                                    <Setter Property="CommandParameter" Value="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type TreeViewItem}}, Path=DataContext}" />
+                                </Style>
+                            </ContextMenu.ItemContainerStyle>
+                        </ContextMenu>
+                    </TextBlock.ContextMenu>
+                </TextBlock>
+            </HierarchicalDataTemplate>
+        </TreeView.ItemTemplate>
+    </TreeView>
+</UserControl>

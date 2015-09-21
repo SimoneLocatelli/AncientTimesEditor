@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootstrapper", "Source\Bootstrapper\Bootstrapper.csproj", "{18352227-D60E-4895-A447-AA95A35B8302}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootstrapper.Tests", "Source\Bootstrapper.Tests\Bootstrapper.Tests.csproj", "{8A899D8F-70D8-45AF-8289-B16E805AEAC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluginsTester", "Source\PluginsTester\PluginsTester.csproj", "{0C76742E-6F5B-43F6-93BB-8AD3F4818FA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluginsTester.Dependencies", "Source\PluginsTester.Dependencies\PluginsTester.Dependencies.csproj", "{98BAFE67-047F-47BC-AE47-4926D83D6EB6}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Source\\Bootstrapper\\Bootstrapper.csproj
+		SccProjectName1 = Source/Bootstrapper
+		SccLocalPath1 = Source\\Bootstrapper
+		SccProjectUniqueName2 = Source\\Bootstrapper.Tests\\Bootstrapper.Tests.csproj
+		SccProjectName2 = Source/Bootstrapper.Tests
+		SccLocalPath2 = Source\\Bootstrapper.Tests
+		SccProjectUniqueName3 = Source\\PluginsTester\\PluginsTester.csproj
+		SccProjectName3 = Source/PluginsTester
+		SccLocalPath3 = Source\\PluginsTester
+		SccProjectUniqueName4 = Source\\PluginsTester.Dependencies\\PluginsTester.Dependencies.csproj
+		SccProjectName4 = Source/PluginsTester.Dependencies
+		SccLocalPath4 = Source\\PluginsTester.Dependencies
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18352227-D60E-4895-A447-AA95A35B8302}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18352227-D60E-4895-A447-AA95A35B8302}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18352227-D60E-4895-A447-AA95A35B8302}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18352227-D60E-4895-A447-AA95A35B8302}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A899D8F-70D8-45AF-8289-B16E805AEAC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A899D8F-70D8-45AF-8289-B16E805AEAC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A899D8F-70D8-45AF-8289-B16E805AEAC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A899D8F-70D8-45AF-8289-B16E805AEAC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C76742E-6F5B-43F6-93BB-8AD3F4818FA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C76742E-6F5B-43F6-93BB-8AD3F4818FA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C76742E-6F5B-43F6-93BB-8AD3F4818FA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C76742E-6F5B-43F6-93BB-8AD3F4818FA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98BAFE67-047F-47BC-AE47-4926D83D6EB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98BAFE67-047F-47BC-AE47-4926D83D6EB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98BAFE67-047F-47BC-AE47-4926D83D6EB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98BAFE67-047F-47BC-AE47-4926D83D6EB6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,149 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D354A1CA-1705-4895-AA61-1EB339BD1BE1}"
+	ProjectSection(SolutionItems) = preProject
+		Configuration\CodeAnalysisRuleSet.ruleset = Configuration\CodeAnalysisRuleSet.ruleset
+		Configuration\CodeCoverage.runsettings = Configuration\CodeCoverage.runsettings
+		Configuration\common.props = Configuration\common.props
+		Configuration\commonIncludedItems.props = Configuration\commonIncludedItems.props
+		Configuration\GlobalAssemblyProperties.cs = Configuration\GlobalAssemblyProperties.cs
+		Configuration\testcommon.props = Configuration\testcommon.props
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockSystem", "Source\DockSystem\DockSystem.csproj", "{4FAF65B4-EFF8-4962-92AA-4FD38CCF89AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockSystem.Dependencies", "Source\DockSystem.Dependencies\DockSystem.Dependencies.csproj", "{762BEE60-BE90-4F5E-AEE8-D80A77869679}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowShell", "Source\WindowShell\WindowShell.csproj", "{F404AE8D-9049-4741-9838-BA75FDF22C28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowShell.ContentTemplates", "Source\WindowShell.ContentTemplates\WindowShell.ContentTemplates.csproj", "{ECA3AAA5-07AC-4D7F-BB97-C9D2A674E11B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowShell.Dependencies", "Source\WindowShell.Dependencies\WindowShell.Dependencies.csproj", "{037B60A0-5D66-41F5-A957-FC6EA48A6E89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainMenu", "Source\MainMenu\MainMenu.csproj", "{2FEF6F0E-64AF-499E-99B7-F2E8F2AF1FAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainMenu.Dependencies", "Source\MainMenu.Dependencies\MainMenu.Dependencies.csproj", "{E8477BA8-F396-4A79-908E-4EA7EE09AAA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainMenu.Tests", "Source\MainMenu.Tests\MainMenu.Tests.csproj", "{E7F49310-B29E-491A-A6B6-0A3DCF78BD7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xceed.Wpf.AvalonDock.Themes.VS2013", "Source\ThirdParty\Xceed.Wpf.AvalonDock.Themes.VS2013\Xceed.Wpf.AvalonDock.Themes.VS2013.csproj", "{89286EB4-B4A1-418C-839A-067B00F442D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Themes", "Source\Themes\Themes.csproj", "{2B78AF90-3C1C-4D05-9AFD-60E731B35B6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonControls", "Source\CommonControls\CommonControls.csproj", "{88C90ADD-F943-4CB5-B086-30717607F459}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonControls.Dependencies", "Source\CommonControls.Dependencies\CommonControls.Dependencies.csproj", "{027B2FA2-C373-4028-9EE7-2587F69F6826}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowShell.Tests", "Source\WindowShell.Tests\WindowShell.Tests.csproj", "{076FE350-96E3-4D00-A83F-C1C81686C088}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 14
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Source\\DockSystem\\DockSystem.csproj
+		SccProjectName1 = Source/DockSystem
+		SccLocalPath1 = Source\\DockSystem
+		SccProjectUniqueName2 = Source\\DockSystem.Dependencies\\DockSystem.Dependencies.csproj
+		SccProjectName2 = Source/DockSystem.Dependencies
+		SccLocalPath2 = Source\\DockSystem.Dependencies
+		SccProjectUniqueName3 = Source\\WindowShell\\WindowShell.csproj
+		SccProjectName3 = Source/WindowShell
+		SccLocalPath3 = Source\\WindowShell
+		SccProjectUniqueName4 = Source\\WindowShell.ContentTemplates\\WindowShell.ContentTemplates.csproj
+		SccProjectName4 = Source/WindowShell.ContentTemplates
+		SccLocalPath4 = Source\\WindowShell.ContentTemplates
+		SccProjectUniqueName5 = Source\\WindowShell.Dependencies\\WindowShell.Dependencies.csproj
+		SccProjectName5 = Source/WindowShell.Dependencies
+		SccLocalPath5 = Source\\WindowShell.Dependencies
+		SccProjectUniqueName6 = Source\\MainMenu\\MainMenu.csproj
+		SccProjectName6 = Source/MainMenu
+		SccLocalPath6 = Source\\MainMenu
+		SccProjectUniqueName7 = Source\\MainMenu.Dependencies\\MainMenu.Dependencies.csproj
+		SccProjectName7 = Source/MainMenu.Dependencies
+		SccLocalPath7 = Source\\MainMenu.Dependencies
+		SccProjectUniqueName8 = Source\\MainMenu.Tests\\MainMenu.Tests.csproj
+		SccProjectName8 = Source/MainMenu.Tests
+		SccLocalPath8 = Source\\MainMenu.Tests
+		SccProjectUniqueName9 = Source\\ThirdParty\\Xceed.Wpf.AvalonDock.Themes.VS2013\\Xceed.Wpf.AvalonDock.Themes.VS2013.csproj
+		SccProjectName9 = Source/ThirdParty/Xceed.Wpf.AvalonDock.Themes.VS2013
+		SccLocalPath9 = Source\\ThirdParty\\Xceed.Wpf.AvalonDock.Themes.VS2013
+		SccProjectUniqueName10 = Source\\Themes\\Themes.csproj
+		SccProjectName10 = Source/Themes
+		SccLocalPath10 = Source\\Themes
+		SccProjectUniqueName11 = Source\\WindowShell.Tests\\WindowShell.Tests.csproj
+		SccProjectName11 = Source/WindowShell.Tests
+		SccLocalPath11 = Source\\WindowShell.Tests
+		SccProjectUniqueName11 = Source\\CommonControls\\CommonControls.csproj
+		SccProjectName11 = Source/CommonControls
+		SccLocalPath11 = Source\\CommonControls
+		SccProjectUniqueName12 = Source\\CommonControls.Dependencies\\CommonControls.Dependencies.csproj
+		SccProjectName12 = Source/CommonControls.Dependencies
+		SccLocalPath12 = Source\\CommonControls.Dependencies
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4FAF65B4-EFF8-4962-92AA-4FD38CCF89AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FAF65B4-EFF8-4962-92AA-4FD38CCF89AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FAF65B4-EFF8-4962-92AA-4FD38CCF89AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FAF65B4-EFF8-4962-92AA-4FD38CCF89AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{762BEE60-BE90-4F5E-AEE8-D80A77869679}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{762BEE60-BE90-4F5E-AEE8-D80A77869679}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{762BEE60-BE90-4F5E-AEE8-D80A77869679}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{762BEE60-BE90-4F5E-AEE8-D80A77869679}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F404AE8D-9049-4741-9838-BA75FDF22C28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F404AE8D-9049-4741-9838-BA75FDF22C28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F404AE8D-9049-4741-9838-BA75FDF22C28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F404AE8D-9049-4741-9838-BA75FDF22C28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECA3AAA5-07AC-4D7F-BB97-C9D2A674E11B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECA3AAA5-07AC-4D7F-BB97-C9D2A674E11B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECA3AAA5-07AC-4D7F-BB97-C9D2A674E11B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECA3AAA5-07AC-4D7F-BB97-C9D2A674E11B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{037B60A0-5D66-41F5-A957-FC6EA48A6E89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{037B60A0-5D66-41F5-A957-FC6EA48A6E89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{037B60A0-5D66-41F5-A957-FC6EA48A6E89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{037B60A0-5D66-41F5-A957-FC6EA48A6E89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FEF6F0E-64AF-499E-99B7-F2E8F2AF1FAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FEF6F0E-64AF-499E-99B7-F2E8F2AF1FAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FEF6F0E-64AF-499E-99B7-F2E8F2AF1FAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FEF6F0E-64AF-499E-99B7-F2E8F2AF1FAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8477BA8-F396-4A79-908E-4EA7EE09AAA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8477BA8-F396-4A79-908E-4EA7EE09AAA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8477BA8-F396-4A79-908E-4EA7EE09AAA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8477BA8-F396-4A79-908E-4EA7EE09AAA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7F49310-B29E-491A-A6B6-0A3DCF78BD7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7F49310-B29E-491A-A6B6-0A3DCF78BD7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7F49310-B29E-491A-A6B6-0A3DCF78BD7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7F49310-B29E-491A-A6B6-0A3DCF78BD7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89286EB4-B4A1-418C-839A-067B00F442D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89286EB4-B4A1-418C-839A-067B00F442D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89286EB4-B4A1-418C-839A-067B00F442D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89286EB4-B4A1-418C-839A-067B00F442D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B78AF90-3C1C-4D05-9AFD-60E731B35B6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B78AF90-3C1C-4D05-9AFD-60E731B35B6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B78AF90-3C1C-4D05-9AFD-60E731B35B6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B78AF90-3C1C-4D05-9AFD-60E731B35B6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{076FE350-96E3-4D00-A83F-C1C81686C088}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{076FE350-96E3-4D00-A83F-C1C81686C088}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{076FE350-96E3-4D00-A83F-C1C81686C088}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{076FE350-96E3-4D00-A83F-C1C81686C088}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88C90ADD-F943-4CB5-B086-30717607F459}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88C90ADD-F943-4CB5-B086-30717607F459}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88C90ADD-F943-4CB5-B086-30717607F459}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88C90ADD-F943-4CB5-B086-30717607F459}.Release|Any CPU.Build.0 = Release|Any CPU
+		{027B2FA2-C373-4028-9EE7-2587F69F6826}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{027B2FA2-C373-4028-9EE7-2587F69F6826}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{027B2FA2-C373-4028-9EE7-2587F69F6826}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{027B2FA2-C373-4028-9EE7-2587F69F6826}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
